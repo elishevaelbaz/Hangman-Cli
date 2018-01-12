@@ -4,7 +4,7 @@ var Word = require("./word2.js");
 
 var inquirer = require("inquirer");
 
-// var colors = require("colors");
+var colors = require("colors");
 
 //array of words
 
@@ -13,17 +13,12 @@ var wordsList = ["azalea", "buttercup", "carnation", "chrysanthemum",
 			"iris", "lavender", "lilac", "lily", "marigold", "orchid",
 			"rose", "sunflower", "tulip", "violet", "zinnia"];
 
-  var chosenWord = "";
-// set numGuesses
-
-  var numGuesses = 9;
-
-  var isWon = false;
+var chosenWord = "";
+var numGuesses = 9;
+var isWon = false;
 
 
-// //create a Word
-// // split the word and create the letters
-// // show the underscores
+
 var newWord;
 // //newLetters includes the function to show the underscores
 // newWord.newLetters();
@@ -103,7 +98,7 @@ inquirer.prompt([
 
 			// if the letter is in the word
 			if (letterInWord){
-				console.log("\nCORRECT!!!\n")
+				console.log(colors.green("\nCORRECT!!!\n"));
 			}
 			// if it's not in the word
 			else{
@@ -111,10 +106,10 @@ inquirer.prompt([
 
 				// if there are no more guesses left
 				if (numGuesses == 0){
-					console.log("\nINCORRECT! You ran out of guesses!\n")
+					console.log(colors.red("\nINCORRECT!") + " You ran out of guesses!\n")
 				}
 				else{
-				console.log(`\nINCORRECT! You have ${numGuesses} guesses left\n`)
+				console.log(colors.red("\nINCORRECT!") + " You have " + numGuesses + " guesses left\n")
 				}
 			}
 
