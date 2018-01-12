@@ -1,0 +1,34 @@
+//array of words
+
+// set numGuesses
+
+//choose a random word
+
+//create a Word object
+// split the word and create the letters
+
+
+//newLetters includes the function to show the underscores
+
+
+// show the underscores
+
+
+// show the prompt and the number of guesses left
+// recursion --> keep showing until they run out of guesses
+// or all the letters are shown
+	// if the guess is in the word
+		//display the updated word (with all instances of that letter shown)
+	//else
+		// numGuesses -- (display the number of guesses)
+
+
+// once that game is over, prompt for another game
+
+
+//indexOf doesn't work because obj - see teamManager
+// console.log(newWord.letterObjArray.indexOf("g"))
+
+
+
+
