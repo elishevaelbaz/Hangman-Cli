@@ -1,19 +1,15 @@
 
-var Letter = require("./letter2.js");
+var Letter = require("./letter.js");
 
 var Word = function(word) {
   this.word = word;
-
   this.display = "";
-
   this.letterObjArray = [];
-  // this.name = name;
-  // this.role = role;
+  
   this.splitWord = function(){
-  	console.log(word);
+  	// console.log(word);
   	return this.word.split("");
   }
-
 
 // create a new Letter object for each letter in the word
   this.newLetters = function(num){
@@ -31,7 +27,7 @@ var Word = function(word) {
 
   	}
 
-  	// after creating all the Ltter objects,
+  	// after creating all the Letter objects,
   	//show the word (as underscores)
   	this.showWord();
   }

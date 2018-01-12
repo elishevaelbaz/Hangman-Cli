@@ -1,5 +1,5 @@
 
-var Word = require("./word2.js");
+var Word = require("./word.js");
 
 var inquirer = require("inquirer");
 
@@ -19,32 +19,25 @@ var isWon = false;
 var newWord;
 
 
-
-// show the prompt and the number of guesses left
-// recursion --> keep showing until they run out of guesses
-// or all the letters are shown
-	// if the guess is in the word
-		//display the updated word (with all instances of that letter shown)
-	//else
-		// numGuesses -- (display the number of guesses)
-
 function initializeGame(){
 
 	numGuesses = 9;
 	isWon = false;
 	//choose a word randomly from list
 	chosenWord = wordsList[Math.floor(Math.random() * wordsList.length)];
+	
+	console.log("\n(Hint: All answers are types of flowers)")
+	
 	//create a Word
 	// split the word and create the letters
 	// show the underscores
 	newWord = new Word(chosenWord);
-	//newLetters includes the function to show the underscores
 	newWord.newLetters();
 	// playGame();
-
 	}
 
-
+// recursion --> keep showing until they run out of guesses
+// or all the letters are shown
 function playGame(){
 	// if there are still guesses left and there are still blanks in the word
 	if ((numGuesses > 0) && (!isWon)){
