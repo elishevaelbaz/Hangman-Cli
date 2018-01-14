@@ -1,4 +1,7 @@
 
+// the repo for this game should be linked in my portfolio
+// pages link for portfolio: https://elishevaelbaz.github.io/
+
 var Word = require("./word.js");
 
 var inquirer = require("inquirer");
