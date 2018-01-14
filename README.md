@@ -18,7 +18,7 @@ Running the program will cause a word to be chosen, and the corresponding number
 The hangman game continues as usual.
 
 
-If the guessed letter is not in the word, the player loses a guess. The game will inform the user that the guess was incorrect, display how many guesses are remaining and prompt the user to guess a new letter.
+If the guessed letter is not in the word, the player loses a guess. The game will inform the user that the guess was incorrect, display how many guesses are remaining, and prompt the user to guess a new letter.
 
 ![incorrect guess](images/incorrectGuess3.PNG "Description goes here")
 
@@ -31,7 +31,7 @@ When the game is over the game will inform the player whether they won (by guess
 
 ![game over](images/gameOver.PNG "Description goes here")
 
-If they answer yes, a new game with a new word, will begin.
+If they answer yes, a new word will be chosen and a new round will begin.
 
 
 
