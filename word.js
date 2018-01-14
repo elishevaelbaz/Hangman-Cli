@@ -32,7 +32,10 @@ var Word = function(word) {
   	this.showWord();
   }
 
-  this.showWord = function(){
+}
+
+// using a prototype instead of method within the constructor
+Word.prototype.showWord = function(){
   	//empty out the display
   	this.display = "";
 
@@ -45,7 +48,5 @@ var Word = function(word) {
   	// output to the screen
   	console.log("\n" + this.display + "\n");
   }
-}
-
 
 module.exports = Word;

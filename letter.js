@@ -7,7 +7,10 @@ var Letter = function(char){
 	//guessed starts out as false
 	this.guessed = false;
 
-	this.show = function(){
+}
+
+// using a prototype
+Letter.prototype.show = function() {
 		if (this.guessed){
 			return this.value;	
 		}
@@ -16,6 +19,5 @@ var Letter = function(char){
 			return "_";
 		}
 	}
-}
 
 module.exports = Letter;

@@ -27,7 +27,7 @@ If the letter is in the word, the number of guesses left remains the same. The g
 
 ![correct guess](images/correctGuess2.PNG "Description goes here")
 
-When the game is over the game will inform the player whether they won(by guessing all the letters in the word) or lost (by running out of guesses) and will ask the user if they want to play again or not. 
+When the game is over the game will inform the player whether they won (by guessing all the letters in the word) or lost (by running out of guesses) and will ask the user if they want to play again or not. 
 
 ![game over](images/gameOver.PNG "Description goes here")
 
