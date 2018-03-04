@@ -10,6 +10,10 @@ This is a hangman command-line game using constructor functions.
 
 ## Instructions
 
+1. Download or clone the repository.
+2. Install the node packages by running `npm install` in the terminal.
+3. To start the game, run `node hangman-cli.js` in the terminal.
+
 
 Running the program will cause a word to be chosen, and the corresponding number of dashes to appear on the screen along with a prompt asking the user to guess a letter.
 
